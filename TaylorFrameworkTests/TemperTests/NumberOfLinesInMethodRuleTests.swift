@@ -21,7 +21,7 @@ class NumberOfLinesInMethodRuleTests: QuickSpec {
                 expect(result.message).to(beNil())
                 expect(result.value).to(equal(18))
             }
-            it("should return false and message when number of lines in bigger than the limit") {
+            it("should return false and message when number of lines is bigger than the limit") {
                 let component = Component(type: ComponentType.Function, range: ComponentRange(sl: 1, el: self.rule.limit + 2))
                 let result = self.rule.checkComponent(component)
                 expect(result.isOk).to(beFalse())
