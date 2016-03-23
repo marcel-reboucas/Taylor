@@ -7,6 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1FC23C4B1CA3134F00670FE1 /* Metric.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FC23C4A1CA3134F00670FE1 /* Metric.swift */; };
+		1FC23C4D1CA3164500670FE1 /* MetricsFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FC23C4C1CA3164500670FE1 /* MetricsFactory.swift */; };
+		1FC23C4F1CA3169F00670FE1 /* NumberOfMethodsInClassMetric.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FC23C4E1CA3169F00670FE1 /* NumberOfMethodsInClassMetric.swift */; };
+		1FC23C511CA318A500670FE1 /* MetricInformation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FC23C501CA318A500670FE1 /* MetricInformation.swift */; };
+		1FC23C531CA31BD700670FE1 /* MetricInformationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FC23C521CA31BD700670FE1 /* MetricInformationTests.swift */; };
+		1FC23C551CA3213400670FE1 /* MetricsFactoryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FC23C541CA3213400670FE1 /* MetricsFactoryTests.swift */; };
+		1FC23C571CA3222800670FE1 /* NumberOfMethodsInClassMetricTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FC23C561CA3222800670FE1 /* NumberOfMethodsInClassMetricTests.swift */; };
 		542EF26A1C076F8C004C7477 /* TaylorFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 69B4DC891BED1BD3005EA7D5 /* TaylorFramework.framework */; };
 		542EF2761C076FBB004C7477 /* JSONToViolationParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 542EF2701C076FBB004C7477 /* JSONToViolationParser.swift */; };
 		542EF2771C076FBB004C7477 /* ReporterComparator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 542EF2711C076FBB004C7477 /* ReporterComparator.swift */; };
@@ -295,6 +302,13 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		1FC23C4A1CA3134F00670FE1 /* Metric.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Metric.swift; sourceTree = "<group>"; };
+		1FC23C4C1CA3164500670FE1 /* MetricsFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MetricsFactory.swift; sourceTree = "<group>"; };
+		1FC23C4E1CA3169F00670FE1 /* NumberOfMethodsInClassMetric.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NumberOfMethodsInClassMetric.swift; sourceTree = "<group>"; };
+		1FC23C501CA318A500670FE1 /* MetricInformation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MetricInformation.swift; sourceTree = "<group>"; };
+		1FC23C521CA31BD700670FE1 /* MetricInformationTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MetricInformationTests.swift; sourceTree = "<group>"; };
+		1FC23C541CA3213400670FE1 /* MetricsFactoryTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MetricsFactoryTests.swift; sourceTree = "<group>"; };
+		1FC23C561CA3222800670FE1 /* NumberOfMethodsInClassMetricTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NumberOfMethodsInClassMetricTests.swift; sourceTree = "<group>"; };
 		542EF2601C076F7F004C7477 /* TaylorIntegrationTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TaylorIntegrationTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		542EF2641C076F7F004C7477 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		542EF2701C076FBB004C7477 /* JSONToViolationParser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JSONToViolationParser.swift; sourceTree = "<group>"; };
@@ -502,6 +516,24 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1FC23C481CA312C000670FE1 /* Metrics */ = {
+			isa = PBXGroup;
+			children = (
+				1FC23C4A1CA3134F00670FE1 /* Metric.swift */,
+				1FC23C4C1CA3164500670FE1 /* MetricsFactory.swift */,
+				1FC23C4E1CA3169F00670FE1 /* NumberOfMethodsInClassMetric.swift */,
+			);
+			name = Metrics;
+			sourceTree = "<group>";
+		};
+		1FC23C491CA3131300670FE1 /* MetricInformations */ = {
+			isa = PBXGroup;
+			children = (
+				1FC23C501CA318A500670FE1 /* MetricInformation.swift */,
+			);
+			name = MetricInformations;
+			sourceTree = "<group>";
+		};
 		542EF2611C076F7F004C7477 /* TaylorIntegrationTests */ = {
 			isa = PBXGroup;
 			children = (
@@ -667,6 +699,8 @@
 		69B4DC201BED169B005EA7D5 /* Temper */ = {
 			isa = PBXGroup;
 			children = (
+				1FC23C491CA3131300670FE1 /* MetricInformations */,
+				1FC23C481CA312C000670FE1 /* Metrics */,
 				69B4DC211BED169B005EA7D5 /* Components */,
 				69B4DC231BED169B005EA7D5 /* Core */,
 				69B4DC251BED169B005EA7D5 /* Output */,
@@ -930,6 +964,9 @@
 				69B4DD351BED1FE0005EA7D5 /* TemperTests.swift */,
 				69B4DD361BED1FE0005EA7D5 /* TestsHelper.swift */,
 				69B4DD371BED1FE0005EA7D5 /* ViolationTests.swift */,
+				1FC23C521CA31BD700670FE1 /* MetricInformationTests.swift */,
+				1FC23C541CA3213400670FE1 /* MetricsFactoryTests.swift */,
+				1FC23C561CA3222800670FE1 /* NumberOfMethodsInClassMetricTests.swift */,
 			);
 			path = TemperTests;
 			sourceTree = "<group>";
@@ -1277,8 +1314,11 @@
 				69B4DCC61BED1C2D005EA7D5 /* NPathComplexityRule.swift in Sources */,
 				69B4DCC71BED1C2D005EA7D5 /* NumberOfLinesInClassRule.swift in Sources */,
 				B143B2191BF38420009BFC99 /* PacmanRunner.swift in Sources */,
+				1FC23C511CA318A500670FE1 /* MetricInformation.swift in Sources */,
 				69B4DCC81BED1C2D005EA7D5 /* NumberOfLinesInMethodRule.swift in Sources */,
+				1FC23C4F1CA3169F00670FE1 /* NumberOfMethodsInClassMetric.swift in Sources */,
 				69B4DCC91BED1C2D005EA7D5 /* NumberOfMethodsInClassRule.swift in Sources */,
+				1FC23C4D1CA3164500670FE1 /* MetricsFactory.swift in Sources */,
 				69B4DCCA1BED1C2D005EA7D5 /* Rule.swift in Sources */,
 				69B4DCCB1BED1C2D005EA7D5 /* RulesFactory.swift in Sources */,
 				69B4DCCC1BED1C2D005EA7D5 /* Violation.swift in Sources */,
@@ -1297,6 +1337,7 @@
 				69B4DCA41BED1C00005EA7D5 /* PathOption.swift in Sources */,
 				69B4DCA51BED1C00005EA7D5 /* ReporterOption.swift in Sources */,
 				69B4DCA61BED1C00005EA7D5 /* RuleCustomizationOption.swift in Sources */,
+				1FC23C4B1CA3134F00670FE1 /* Metric.swift in Sources */,
 				69B4DCA71BED1C00005EA7D5 /* TypeOption.swift in Sources */,
 				69B4DCA81BED1C00005EA7D5 /* VerbosityOption.swift in Sources */,
 				69517A1A1BF25C31000B3F1B /* CLIReporter.swift in Sources */,
@@ -1326,6 +1367,7 @@
 				69B4DD381BED1FE0005EA7D5 /* ComponentRangeTests.swift in Sources */,
 				69B4DD431BED1FE0005EA7D5 /* OptionsProcessorTests.swift in Sources */,
 				69B4DD4C1BED1FE0005EA7D5 /* ComponentsBuilder.swift in Sources */,
+				1FC23C571CA3222800670FE1 /* NumberOfMethodsInClassMetricTests.swift in Sources */,
 				69B4DD491BED1FE0005EA7D5 /* MockFileManager.swift in Sources */,
 				69B4DD3A1BED1FE0005EA7D5 /* FileContentTests.swift in Sources */,
 				69B4DD4A1BED1FE0005EA7D5 /* ParametersTests.swift in Sources */,
@@ -1336,6 +1378,7 @@
 				69B4DD731BED1FE1005EA7D5 /* RulesFactoryTests.swift in Sources */,
 				69B4DD711BED1FE1005EA7D5 /* OutputCoordinatorTests.swift in Sources */,
 				69B4DD6C1BED1FE1005EA7D5 /* NPathComplexityRuleTests.swift in Sources */,
+				1FC23C531CA31BD700670FE1 /* MetricInformationTests.swift in Sources */,
 				69B4DD461BED1FE0005EA7D5 /* VerbosityOptionTests.swift in Sources */,
 				69B4DD671BED1FE1005EA7D5 /* ComponentRangeExtensionsTests.swift in Sources */,
 				69B4DD391BED1FE0005EA7D5 /* ComponentTests.swift in Sources */,
@@ -1362,6 +1405,7 @@
 				B199EC0F1BF0E21000B6155A /* ReporterOptionTests.swift in Sources */,
 				69B4DD451BED1FE0005EA7D5 /* PathFormatterTests.swift in Sources */,
 				B1F4BECE1BF500B7003C584A /* ReportGeneratorTests.swift in Sources */,
+				1FC23C551CA3213400670FE1 /* MetricsFactoryTests.swift in Sources */,
 				B1F4BECC1BF50071003C584A /* TimerTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

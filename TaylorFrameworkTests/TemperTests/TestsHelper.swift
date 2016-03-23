@@ -179,6 +179,15 @@ class TestsHelper {
         }
     }
     
+    var aMetric : Metric {
+        let metrics = MetricsFactory().getMetrics()
+        if let first = metrics.first {
+            return first
+        } else {
+            return NumberOfMethodsInClassMetric()
+        }
+    }
+    
     var componentForCyclomaticComplexity : Component {
         let component = Component(type: .Function, range: ComponentRange(sl: 3, el: 36), name: nil)
         let component1 = component.makeComponent(type: .If, range: ComponentRange(sl: 4, el: 11))
